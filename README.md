@@ -1,7 +1,7 @@
 # AmazonGroundTruthREF
 
 
-Amazon SageMaker Ground Truth, [FAQ](https://aws.amazon.com/jp/sagemaker/groundtruth/faqs/)
+Amazon SageMaker Ground Truth, [FAQ](https://aws.amazon.com/jp/sagemaker/groundtruth/faqs/), [DeveloperRes](https://aws.amazon.com/jp/sagemaker/groundtruth/developer-resources/)
 - 数ステップでAIモデル構築用のデータのラベル付けジョブの作業設定ができるマネージドサービス
 - Ground Truth はデータを AWS 環境外に保存したりコピーできない
 - Ground Truth は一般データ保護規則 (GDPR) などのコンプライアンス基準をサポート
