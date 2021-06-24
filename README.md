@@ -38,4 +38,12 @@ YOLO注釈生成まで[目次と解説文抜粋]
 ---
 
 - Amazon SageMaker Ground Truthの[AWSブログ](https://aws.amazon.com/jp/blogs/news/)で[GTタグ情報](https://aws.amazon.com/jp/blogs/news/category/artificial-intelligence/amazon-sagemaker-ground-truth/)
-  -  
+  - [Amazon SageMaker Ground Truthを利用した動画ラベリングとAmazon Rekognition Custom Labelsへのインポート ](https://aws.amazon.com/jp/blogs/news/amazon-sagemaker-gt-video/)
+  - [Amazon Rekognition Custom Labels で特定の動作を認識する機械学習モデルを作る](https://aws.amazon.com/jp/blogs/news/amazon-rekognition-custom-labels-motion-detect/)
+  - 
+
+---
+日本のSageMaker活用事例
+
+- 2020-02-27,SONY [SoVeC Smart Videoという、深層学習を活用した動画自動生成クラウドサービスを短期間でリリース](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo2/) 動画の素材として利用者から提供された静止画が低解像であっても SRGAN（Super Resolution Generative Adversarial Network）を用いて高精細化,ローカルPCへのSageMaker環境構築方法、Amazon SageMaker Managed Spot Training利用の注意点.[Slides](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AI_et_ML_at_Tokyo_No_2_usecase_Sony_Oishi_handout.pdf)
+- 
