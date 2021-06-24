@@ -30,6 +30,11 @@ YOLO注釈生成まで[目次と解説文抜粋]
      - これで、いくつかの画像とそれに対応する注釈を調べて、モデルトレーニング用に適切にフォーマットされていることを確認できます。ただし、最初に、画像にYOLO形式のバウンディングボックスを描画する手順を作成する必要があります。
      - AmazonS3から画像と対応する注釈ファイルをダウンロードします。
      - 各バウンディングボックスの正しいラベルを表示するには、辞書でラベルを付けたオブジェクトの名前を指定します。このユースケースでは、ラベルの順序は重要です。**GroundTruthラベリングジョブの作成時に使用した順序と一致している必要があります**。
+
+---
+- [FIELD NOTES: GAINING INSIGHTS INTO LABELING JOBS FOR MACHINE LEARNING](https://noise.getoto.net/tag/amazon-sagemaker-ground-truth/)
+  - GroundTruthの注釈づけをしたMTurkのラベラーの評価。作業者毎の作業数や、日別統計など。 
+
 ---
 
 - Amazon SageMaker Ground Truthの[AWSブログ](https://aws.amazon.com/jp/blogs/news/)で[GTタグ情報](https://aws.amazon.com/jp/blogs/news/category/artificial-intelligence/amazon-sagemaker-ground-truth/)
