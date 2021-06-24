@@ -1,7 +1,7 @@
 # AmazonGroundTruthREF
 
 
-Amazon SageMaker Ground Truth＝数ステップでデータのラベル付けジョブの作業設定ができるマネージドサービス
+Amazon SageMaker Ground Truth＝数ステップでAIモデル構築用のデータのラベル付けジョブの作業設定ができるマネージドサービス
 
 ---
 - [Streamlining data labeling for YOLO object detection in Amazon SageMaker Ground Truth](https://awsfeed.com/whats-new/machine-learning/streamlining-data-labeling-for-yolo-object-detection-in-amazon-sagemaker-ground-truth)
