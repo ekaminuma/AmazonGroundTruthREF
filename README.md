@@ -1,7 +1,11 @@
 # AmazonGroundTruthREF
 
 
-Amazon SageMaker Ground Truth＝数ステップでAIモデル構築用のデータのラベル付けジョブの作業設定ができるマネージドサービス
+Amazon SageMaker Ground Truth
+- 数ステップでAIモデル構築用のデータのラベル付けジョブの作業設定ができるマネージドサービス
+- Ground Truth はデータを AWS 環境外に保存したりコピーできない
+- Ground Truth は一般データ保護規則 (GDPR) などのコンプライアンス基準をサポート
+- Amazon CloudWatch および Amazon CloudTrail でログ記録および監査機能を提供
 
 ---
 - [Streamlining data labeling for YOLO object detection in Amazon SageMaker Ground Truth](https://awsfeed.com/whats-new/machine-learning/streamlining-data-labeling-for-yolo-object-detection-in-amazon-sagemaker-ground-truth)
