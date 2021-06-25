@@ -11,34 +11,28 @@
   - 後編︓前編の続き[Amazon SageMaker を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202005/sagemaker-cat/?awsf.filter-name=*all)
  
 ---
-Amazon SageMaker Ground Truth, [FAQ](https://aws.amazon.com/jp/sagemaker/groundtruth/faqs/), [DeveloperRes](https://aws.amazon.com/jp/sagemaker/groundtruth/developer-resources/)
-- 数ステップでAIモデル構築用のデータのラベル付けジョブの作業設定ができるマネージドサービス
-- Ground Truth はデータを AWS 環境外に保存したりコピーできない
-- Ground Truth は一般データ保護規則 (GDPR) などのコンプライアンス基準をサポート
-- Amazon CloudWatch および Amazon CloudTrail でログ記録および監査機能を提供
+Amazon SageMaker Ground Truth (SageMakerGT), [FAQ](https://aws.amazon.com/jp/sagemaker/groundtruth/faqs/), [DeveloperRes](https://aws.amazon.com/jp/sagemaker/groundtruth/developer-resources/)
+   - SageMakerGTは、数ステップでAIモデル構築用のデータラベリング作業環境を作成できるマネージドサービス
+   - Ground Truth はデータを AWS 環境外に保存したりコピーできない
+   - Ground Truth は一般データ保護規則 (GDPR) などのコンプライアンス基準をサポート
+   - Amazon CloudWatch および Amazon CloudTrail でログ記録および監査機能を提供
 
 ---
-- [Streamlining data labeling for YOLO object detection in Amazon SageMaker Ground Truth](https://awsfeed.com/whats-new/machine-learning/streamlining-data-labeling-for-yolo-object-detection-in-amazon-sagemaker-ground-truth)
-YOLO注釈生成まで[目次と解説文抜粋]
+SageMakerGT後のYOLO物体検出モデル学習
 
-  - 1.Setting up your S3 bucket
-  - 2.Creating the manifest file
-  - 3.Creating the Ground Truth job
-  - 4.Specifying the job details
-  - 5.Specifying the task type
-  - 6.Creating a team of labelers
-  - 7.Specifying labeling task details
-  - 8.Sign in and start labeling 
-  - 9.Checking job status＝ラベル付けが完了すると、ラベル付けジョブのステータスが[完了]に変わります。「output.manifest」という注釈結果を含む新しいJSONファイルが生成されているのを確認できます。
-  - 10.Parsing Ground Truth annotations
+- [Streamlining data labeling for YOLO object detection in Amazon SageMaker Ground Truth](https://awsfeed.com/whats-new/machine-learning/streamlining-data-labeling-for-yolo-object-detection-in-amazon-sagemaker-ground-truth)
+
+[目次と解説文抜粋]
+
+  - **1.Setting up your S3 bucket**/ **2.Creating the manifest file**/ **3.Creating the Ground Truth job** / **4.Specifying the job details** / **5.Specifying the task type** / **6.Creating a team of labelers** / **7.Specifying labeling task details**/  **8.Sign in and start labeling** 
+  - **9.Checking job status**＝ラベル付けが完了でステータスが[完了]に。「output.manifest」という注釈結果を含むJSONファイルが生成。
+  - **10.Parsing Ground Truth annotations**　[annotationの形式変換[1] output.manifest-->csv-->pandas DF]
      - parse_annot.pyとして、サイトからCODEをコピペして保存します。
-     - AWS CLIから「python parse_annot.py」コマンドを実行します。Ground Truthは、x座標とy座標、およびその高さと幅の4つの数値のバウンディングボックス情報を返します。parse_gt_outputはoutput.manifestファイルをスキャンして、パンダのデータフレーム内の各画像のすべてのバウンディングボックスの情報を保存します。save_df_to_s3はS3バケットに表形式ファイル「annot.csv」を保存します。
+     - AWS CLIから「python parse_annot.py」コマンドを実行します。Ground Truthは、x座標とy座標、およびその高さと幅の4つの数値のバウンディングボックス情報を返します。parse_gt_outputはoutput.manifestファイルをスキャンして、Pandasのデータフレーム内の各画像のすべてのバウンディングボックスの情報を保存します。save_df_to_s3はS3バケットに表形式ファイル「annot.csv」を保存します。
      - 「output.manifest」のJSONファイルから「annot.csv」に変更する理由は、メタデータなど余計な情報がmanifestに含まれているからです。
      - Amazon S3からannot.csvファイルをローカルコピーするには次コマンドを実行します。
      - aws s3 cp s3://ground-truth-data-labeling/bounding_box/ground_truth_annots/yolo-bbox/annot.csv 
-     - パンダのDFに読み戻し、最初の数行を調べることができます。
-     
-  - 11.Generating YOLO annotations 
+  - **11.Generating YOLO annotations** [annotationの形式変換[2] GT形式からYOLO形式に変更]
      - YOLO形式では、各境界ボックスは、ボックスの中心座標とその幅と高さによって記述されます。各数値は、画像のサイズに応じて拡大縮小されます。したがって、それらはすべて0から1の範囲です。カテゴリ名の代わりに、YOLOモデルは対応する整数カテゴリを想定しています。
      - データフレームのカテゴリ列の各名前を一意の整数にマップする必要があります。さらに、YOLOv3の公式のDarknet実装では、画像の名前を注釈テキストファイルの名前と一致させる必要があります。たとえば、画像ファイルがのpic01.jpg場合、対応する注釈ファイルにはpic01.txt。という名前を付ける必要があります。
      - annot_yoloプロシージャは、ボックス座標を画像サイズで再スケーリングして作成したデータフレームを変換し、save_annots_to_s3各画像に対応する注釈をテキストファイルに保存してAmazonS3に保存します。
