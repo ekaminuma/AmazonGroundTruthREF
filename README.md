@@ -1,14 +1,14 @@
 # AmazonGroundTruthREF
 
 - [Amazon SageMaker Ground Truth でラベル付けしたデータセットを使用して、モデルを簡単にトレーニングする](https://aws.amazon.com/jp/blogs/news/easily-train-models-using-datasets-labeled-by-amazon-sagemaker-ground-truth/) 
-　　- SageMaker, 拡張マニフェスト
+    - SageMaker, 拡張マニフェスト
 - [Amazon SageMaker Ground Truth で作成したデータを使用してオブジェクト検出でモデルを作成してみました](https://dev.classmethod.jp/articles/amazon-sagemaker-object-detection-with-ground-truth/)
     - SageMaker [[ipynb]](https://gist.github.com/furuya02/1429744465506d6080813cafc8fe9579) 
-- [Nyantech 機械学習を使って写真に写っている猫を見分けてみよう！](https://aws.amazon.com/jp/builders-flash/202003/sagemaker-groundtruth-cat/?awsf.filter-name=*all)
+- [Nyantech 機械学習を使って写真に写っている猫を見分けてみよう！](https://aws.amazon.com/jp/builders-flash/202003/sagemaker-groundtruth-cat/?awsf.filter-name=*all) 
+  - **Rekognition** or **SageMaker** ＝RecognitionはGUIのみで推論・学習ができる組込み AI サービス（推論だけでない学習時はCustom Labels利用）。一方、SageMakerはプログラミングが必要。 
   - 前編: [Amazon SageMaker Ground Truth を使った画像のラベリング](https://aws.amazon.com/jp/builders-flash/202003/sagemaker-groundtruth-cat/?awsf.filter-name=*all)
-  - 中編︓[Amazon Rekognition Custom Labels を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202004/sagemaker-groundtruth-cat/?awsf.filter-name=*all)
-  - 後編︓[Amazon SageMaker を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202005/sagemaker-cat/?awsf.filter-name=*all)
-- Rekognition or SageMaker ＝RecognitionはGUIのみでモデル構築できる組み込み AI サービス（Amazon Rekognition Custom Labels）。一方、SageMakerはプログラミングが必要。
+  - 中編︓前編の続き[Amazon Rekognition Custom Labels を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202004/sagemaker-groundtruth-cat/?awsf.filter-name=*all)
+  - 後編︓前編の続き[Amazon SageMaker を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202005/sagemaker-cat/?awsf.filter-name=*all)
  
 ---
 Amazon SageMaker Ground Truth, [FAQ](https://aws.amazon.com/jp/sagemaker/groundtruth/faqs/), [DeveloperRes](https://aws.amazon.com/jp/sagemaker/groundtruth/developer-resources/)
