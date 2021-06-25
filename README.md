@@ -53,5 +53,5 @@ SageMakerGT後のYOLO物体検出モデル学習
 ---
 日本のSageMaker活用事例
 
-- 2020-02-27,SONY [SoVeC Smart Videoという、深層学習を活用した動画自動生成クラウドサービスを短期間でリリース](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo2/) 動画の素材として利用者から提供された静止画が低解像であっても SRGAN（Super Resolution Generative Adversarial Network）を用いて高精細化,ローカルPCへのSageMaker環境構築方法、Amazon SageMaker Managed Spot Training利用の注意点.[Slides](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AI_et_ML_at_Tokyo_No_2_usecase_Sony_Oishi_handout.pdf)
+- 2020-02-27,SONY [SoVeC Smart Videoという、深層学習を活用した動画自動生成クラウドサービスを短期間でリリース](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo2/) SRGAN（Super Resolution Generative Adversarial Network）を用いて高精細化,ローカルPCへのSageMaker環境構築方法、Amazon SageMaker Managed Spot Training利用の注意点.[Slides](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AI_et_ML_at_Tokyo_No_2_usecase_Sony_Oishi_handout.pdf)
 - 
