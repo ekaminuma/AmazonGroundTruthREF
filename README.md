@@ -49,7 +49,6 @@ SageMakerGT後のYOLO物体検出モデル学習
 - Amazon SageMaker Ground Truthの[AWSブログ](https://aws.amazon.com/jp/blogs/news/)で[GTタグ情報](https://aws.amazon.com/jp/blogs/news/category/artificial-intelligence/amazon-sagemaker-ground-truth/)
   - [Amazon SageMaker Ground Truthを利用した動画ラベリングとAmazon Rekognition Custom Labelsへのインポート ](https://aws.amazon.com/jp/blogs/news/amazon-sagemaker-gt-video/)
   - [Amazon Rekognition Custom Labels で特定の動作を認識する機械学習モデルを作る](https://aws.amazon.com/jp/blogs/news/amazon-rekognition-custom-labels-motion-detect/)
-  - 
 
 ---
 日本のSageMaker活用事例
