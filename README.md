@@ -55,9 +55,27 @@ SageMakerGT後のYOLO物体検出モデル学習
 
 [AI/ML@Tokyo](https://aws.amazon.com/jp/blogs/news/tag/ai-mltokyo/)AWSブログより
 
-- 2020-05-19 NTTドコモ:[マイマガジンサービスでのSageMakerを活用したレコメンドシステム構築事例](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo3/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/04232020_AI_ML_Tokyo_docomo_handsout.pdf)
+- 2020-04-26 三菱UFJトラスト投資工学研究所（MTEC） [[Amazon SageMaker を活用した実践・金融データサイエンス]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo10/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/20210408_AIML_Tokyo_MTEC.pdf)
+  - Amazon SageMaker, 国間ニュースは旧予測モデル, 為替ポラティリティ予測モデル,(本)実践金融データサイエンス 
+- 2020-04-26 DXYZ株式会社(ディクシーズ):[[AWSを利用した顔認証IDプラットフォーム構築と Amazon Rekognition 活用事例]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo10/)[[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/3.aimltokyo10_DXYZ.pdf)
+  - Amazon Rekognition + AWS Lamba + AWS CloudWatch
+- 2020-12-22 東日本旅客鉄道株式会社:[[画像認識を活用した PoC 環境構築事例]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo9/)[[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/AIML_Tokyo_9_JR_East.pdf)
+  - AWS Lamba, 列車が走行する線路におけるレール・ガードレール間の移動量の推定 
+- 2020-12-08 株式会社JALインフォテック:[[WebカメラとAmazon Rekognitionを用いた空港混雑度の可視化事例]](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AIML_Tokyo8_JIT.pdf)
+  - Amazon Rekognition + AWS Lambda + Amazon Forecast 
+  - 羽田空港、人が多すぎて塊で検出、RekognitionがBlackboxなのでパラメータチューニング大変
+- 2020-12-08 AWS:[[金融サービスにおける機械学習のベストプラクティス]](https://d1.awsstatic.com/whitepapers/ja_JP/machine-learning-in-financial-services-on-aws.pdf)
+- 2020-10-30 株式会社コナミデジタルエンタテインメント:[[『遊戯王ニューロン』における10000種類カード認識大規模データの学習パイプライン]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo7/)[[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/KONAMI_AIMLTokyo7.pdf)
+  - Amazon SageMaker + Airflow  
+- 2020-10-30 ヤフー株式会社:[[ハイブリッドMLパイプラインによるビジネスアジリティの向上]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo7/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/Yahoo_AIMLTokyo7.pdf)
+  - Amazon SageMaker + Airflow   
+- 2020-09 AWS:[[Amazon SageMakerを使ってAutoGluon-Tabularを活用する方法]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo6/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/2.AutoGluon-Tabular_SageMaker.pdf)
+- 2020-07-27 電通デジタル:[[SageMakerとAirflowによる機械学習モデルの運用自動化について]](https://aws.amazon.com/jp/blogs/news/%E3%80%90%E9%96%8B%E5%82%AC%E5%A0%B1%E5%91%8A%E3%80%91aws-ai-mltokyo-5/)[[Slides]](https://speakerdeck.com/dentsudigital/sagemakertoairflowniyoruji-jie-xue-xi-moterufalseyun-yong-zi-dong-hua-nituite)
+  - Amazon SageMaker (XGBoost) + Airflow 
+- 2020-06-26 BASE:[[BASEでのAWS Personalizeを活用したレコメンドシステム構築事例]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo4/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/3.BASE_aws_aiml_tokyo_4_base.pdf)
+- 2020-05-19 NTTドコモ:[[マイマガジンサービスでのSageMakerを活用したレコメンドシステム構築事例]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo3/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/04232020_AI_ML_Tokyo_docomo_handsout.pdf)
   - Amazon SageMaker Autopilot ＋ Studio 
-- 2020-02-27,SONY: [SoVeC Smart Videoという、深層学習を活用した動画自動生成クラウドサービスを短期間でリリース](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo2/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AI_et_ML_at_Tokyo_No_2_usecase_Sony_Oishi_handout.pdf)
+- 2020-02-27,SONY: [[SoVeC Smart Videoという、深層学習を活用した動画自動生成クラウドサービスを短期間でリリース]](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo2/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AI_et_ML_at_Tokyo_No_2_usecase_Sony_Oishi_handout.pdf)
   - Amazon SageMaker, Amazon SageMaker Managed Spot Training
   - SRGAN（Super Resolution Generative Adversarial Network）を用いて高精細化,ローカルPCへのSageMaker環境構築方法、Spot Trainingの注意点.
 
