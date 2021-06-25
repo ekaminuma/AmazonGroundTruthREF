@@ -53,5 +53,11 @@ SageMakerGT後のYOLO物体検出モデル学習
 ---
 日本のSageMaker活用事例
 
-- 2020-02-27,SONY [SoVeC Smart Videoという、深層学習を活用した動画自動生成クラウドサービスを短期間でリリース](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo2/) SRGAN（Super Resolution Generative Adversarial Network）を用いて高精細化,ローカルPCへのSageMaker環境構築方法、Amazon SageMaker Managed Spot Training利用の注意点.[Slides](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AI_et_ML_at_Tokyo_No_2_usecase_Sony_Oishi_handout.pdf)
-- 
+[AI/ML@Tokyo](https://aws.amazon.com/jp/blogs/news/tag/ai-mltokyo/)AWSブログより
+
+- 2020-05-19 NTTドコモ:[マイマガジンサービスでのSageMakerを活用したレコメンドシステム構築事例](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo3/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/04232020_AI_ML_Tokyo_docomo_handsout.pdf)
+  - Amazon SageMaker Autopilot ＋ Studio 
+- 2020-02-27,SONY: [SoVeC Smart Videoという、深層学習を活用した動画自動生成クラウドサービスを短期間でリリース](https://aws.amazon.com/jp/blogs/news/aws-aiml-tokyo2/) [[Slides]](https://pages.awscloud.com/rs/112-TZM-766/images/3_AWS_AI_et_ML_at_Tokyo_No_2_usecase_Sony_Oishi_handout.pdf)
+  - Amazon SageMaker, Amazon SageMaker Managed Spot Training
+  - SRGAN（Super Resolution Generative Adversarial Network）を用いて高精細化,ローカルPCへのSageMaker環境構築方法、Spot Trainingの注意点.
+
