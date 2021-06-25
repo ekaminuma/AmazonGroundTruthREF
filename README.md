@@ -6,7 +6,8 @@
   - 前編: [Amazon SageMaker Ground Truth を使った画像のラベリング](https://aws.amazon.com/jp/builders-flash/202003/sagemaker-groundtruth-cat/?awsf.filter-name=*all)
   - 中編︓[Amazon Rekognition Custom Labels を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202004/sagemaker-groundtruth-cat/?awsf.filter-name=*all)
   - 後編︓[Amazon SageMaker を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202005/sagemaker-cat/?awsf.filter-name=*all)
-- Amazon Rekognition＝機械学習の専門的な知識がなくても画像や動画認識の機能を簡単に組み込み可能な AI サービスです。物体、人物、テキスト、シーン、動き検出、不適切コンテンツの判定。またAmazon Rekognition Custom Labels を使うことで、独自の画像認識の機械学習モデルを作成可能。 
+- Rekognition or SageMaker ＝RecognitionはGUIのみでモデル構築できる組み込み AI サービス（Amazon Rekognition Custom Labels）。一方、SageMakerはプログラミングが必要。
+ 
 ---
 Amazon SageMaker Ground Truth, [FAQ](https://aws.amazon.com/jp/sagemaker/groundtruth/faqs/), [DeveloperRes](https://aws.amazon.com/jp/sagemaker/groundtruth/developer-resources/)
 - 数ステップでAIモデル構築用のデータのラベル付けジョブの作業設定ができるマネージドサービス
