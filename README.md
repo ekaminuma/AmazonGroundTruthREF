@@ -1,7 +1,15 @@
 # Amazon SageMaker Ground Truth(SageMakerGT)
 
+---
 - [Amazon SageMaker Ground Truth でラベル付けしたデータセットを使用して、モデルを簡単にトレーニングする](https://aws.amazon.com/jp/blogs/news/easily-train-models-using-datasets-labeled-by-amazon-sagemaker-ground-truth/) 
-    - SageMaker, 拡張マニフェスト
+    - ラベル付きデータセット=入力データセットオブジェクトを、メタデータを使用してインライン展開する拡張マニフェストファイル形式で作成される。
+    - 以前は、拡張されたデータセットでModelをTrainingするために、低レベルの AWS SDK API しか使用できませんでした。
+    - Amazon SageMakerコンソールで数回クリックするか、Amazon SageMaker Python SDK を使用して1行の API CallでTrainingをすばやく簡単に実行できるようになりました(2018年12月)。
+- [Augmented Manifest(拡張マニフェスト)ファイルの説明](https://docs.aws.amazon.com/sagemaker/latest/dg/augmented-manifest.html)
+   - ラベル付きデータセットは、拡張マニフェストファイル形式で作成される。 
+   - 拡張マニフェストファイルはJSON形式。
+
+---
 - [Amazon SageMaker Ground Truth で作成したデータを使用してオブジェクト検出でモデルを作成してみました](https://dev.classmethod.jp/articles/amazon-sagemaker-object-detection-with-ground-truth/)
     - SageMaker [[ipynb]](https://gist.github.com/furuya02/1429744465506d6080813cafc8fe9579) 
 - [Nyantech 機械学習を使って写真に写っている猫を見分けてみよう！](https://aws.amazon.com/jp/builders-flash/202003/sagemaker-groundtruth-cat/?awsf.filter-name=*all) 
