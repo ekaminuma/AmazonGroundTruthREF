@@ -1,9 +1,13 @@
 # Amazon SageMaker Ground Truth(SageMakerGT)
 ---
+
+#### Training Job作成 [SageMaker Console]
+
+- [SageMaker Object Detection training](https://www.easymlpocs.com/training/sageobjdetection/)
 - [AmazonSagemakerを使用してAWSクラウドにデプロイするエンドツーエンドのディープラーニングモデルを構築する](https://ichi.pro/amazonsagemaker-o-shiyoshite-aws-kura-udo-ni-depuroi-suru-endotsu-endo-no-dhi-pura-ningumoderu-o-kochikusuru-118221202638567)
-    - トレーニングジョブを作成するには、2つのオプションがあります。
+    - トレーニングジョブ作成には2つのオプション有。
        - 1. APIとコード(notebook)の使用
-       - 2. sagemakerコンソールの使用
+       - 2. sagemakerコンソールの使用＝File/Pipeの違い
              - ファイルモード：トレーニング用データは、ジョブが開始されるEC2インスタンスにコピーされます。
              - パイプモード：トレーニングデータはリアルタイムでEC2インスタンスにストリーミングされます。 
  
