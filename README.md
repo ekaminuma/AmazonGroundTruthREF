@@ -1,5 +1,12 @@
 # Amazon SageMaker Ground Truth(SageMakerGT)
-
+---
+- [AmazonSagemakerを使用してAWSクラウドにデプロイするエンドツーエンドのディープラーニングモデルを構築する](https://ichi.pro/amazonsagemaker-o-shiyoshite-aws-kura-udo-ni-depuroi-suru-endotsu-endo-no-dhi-pura-ningumoderu-o-kochikusuru-118221202638567)
+    - トレーニングジョブを作成するには、2つのオプションがあります。
+       - 1. APIとコード(notebook)の使用
+       - 2. sagemakerコンソールの使用
+             - ファイルモード：トレーニング用データは、ジョブが開始されるEC2インスタンスにコピーされます。
+             - パイプモード：トレーニングデータはリアルタイムでEC2インスタンスにストリーミングされます。 
+ 
 ---
 - [Amazon SageMaker Ground Truth でラベル付けしたデータセットを使用して、モデルを簡単にトレーニングする](https://aws.amazon.com/jp/blogs/news/easily-train-models-using-datasets-labeled-by-amazon-sagemaker-ground-truth/) 
     - ラベル付きデータセット=入力データセットオブジェクトを、メタデータを使用してインライン展開する拡張マニフェストファイル形式で作成される。
