@@ -1,4 +1,4 @@
-# AmazonGroundTruthREF
+# Amazon SageMaker Ground Truth(SageMakerGT)
 
 - [Amazon SageMaker Ground Truth でラベル付けしたデータセットを使用して、モデルを簡単にトレーニングする](https://aws.amazon.com/jp/blogs/news/easily-train-models-using-datasets-labeled-by-amazon-sagemaker-ground-truth/) 
     - SageMaker, 拡張マニフェスト
