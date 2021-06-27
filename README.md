@@ -1,9 +1,21 @@
 # Amazon SageMaker Ground Truth(SageMakerGT)
 ---
+#### Training Job作成 [Python API notebook]
 
+- [From Unlabeled Data to a Deployed Machine Learning Model: A SageMaker Ground Truth Demonstration for Object Detection](https://github.com/aws/amazon-sagemaker-examples/blob/master/ground_truth_labeling_jobs/ground_truth_object_detection_tutorial/object_detection_tutorial.ipynb)
+    - augmented manifest into a training set and a validation set using an 80/20 split 
+- 
+
+
+---
 #### Training Job作成 [SageMaker Console]
 
 - [SageMaker Object Detection training](https://www.easymlpocs.com/training/sageobjdetection/)
+   - add the job name, 
+   - create a new IAM role or use an existing role which has necessary permission. 
+   - Select “Object Detection” algorithm from the drop down and use “Pipe” as the Input mode. 
+   - In the hyperparameter selection section, make sure to put correct number of training samples.
+   - Edit input data configuration section and make sure to put S3 location for the output.manifest file.
 - [AmazonSagemakerを使用してAWSクラウドにデプロイするエンドツーエンドのディープラーニングモデルを構築する](https://ichi.pro/amazonsagemaker-o-shiyoshite-aws-kura-udo-ni-depuroi-suru-endotsu-endo-no-dhi-pura-ningumoderu-o-kochikusuru-118221202638567)
     - トレーニングジョブ作成には2つのオプション有。
        - 1. APIとPythonコード(Notebook)の使用
@@ -29,7 +41,9 @@
   - 前編: [Amazon SageMaker Ground Truth を使った画像のラベリング](https://aws.amazon.com/jp/builders-flash/202003/sagemaker-groundtruth-cat/?awsf.filter-name=*all)
   - 中編︓前編の続き[Amazon Rekognition Custom Labels を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202004/sagemaker-groundtruth-cat/?awsf.filter-name=*all) **アルゴリズム選択不可＝BlackBoxモデル**
   - 後編︓前編の続き[Amazon SageMaker を使った機械学習モデルの作成](https://aws.amazon.com/jp/builders-flash/202005/sagemaker-cat/?awsf.filter-name=*all) **アルゴリズム選択可**
- 
+- [Object Detection Models Part 1: AWS Rekognition Custom Labels](https://www.proctor-analytics.com/blog/ObjectDetectionModelsWithAWSPart1/) 
+- [Object Detection Models Part 2: **SageMaker Object Detection**](https://www.proctor-analytics.com/blog/ObjectDetectionModelsWithAWSPart2/) 
+- 
 ---
 Amazon SageMaker Ground Truth (SageMakerGT), [FAQ](https://aws.amazon.com/jp/sagemaker/groundtruth/faqs/), [DeveloperRes](https://aws.amazon.com/jp/sagemaker/groundtruth/developer-resources/)
    - SageMakerGTは、数ステップでAIモデル構築用のデータラベリング作業環境を作成できるマネージドサービス
