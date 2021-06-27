@@ -1,6 +1,6 @@
 # Amazon SageMaker Ground Truth(SageMakerGT)
 ---
-#### Training Job作成 [Python API notebook]
+#### Training Job作成方法<1> [Python API notebook]
 
 - [From Unlabeled Data to a Deployed Machine Learning Model: A SageMaker Ground Truth Demonstration for Object Detection](https://github.com/aws/amazon-sagemaker-examples/blob/master/ground_truth_labeling_jobs/ground_truth_object_detection_tutorial/object_detection_tutorial.ipynb)
     - augmented manifest into a training set and a validation set using an 80/20 split 
@@ -8,7 +8,7 @@
 
 
 ---
-#### Training Job作成 [SageMaker Console]
+#### Training Job作成方法<2> [SageMaker Console]
 
 - [SageMaker Object Detection training](https://www.easymlpocs.com/training/sageobjdetection/)
    - add the job name, 
