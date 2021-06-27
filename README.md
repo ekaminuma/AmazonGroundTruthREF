@@ -53,6 +53,22 @@ Amazon SageMaker Ground Truth (SageMakerGT), [FAQ](https://aws.amazon.com/jp/sag
    - Amazon CloudWatch および Amazon CloudTrail でログ記録および監査機能を提供
 
 ---
+GTジョブのチェーン機能で段階的学習
+
+- [Amazon SageMaker GroundTruthを使用した階層ラベル分類の作成](https://aws.amazon.com/jp/blogs/machine-learning/creating-hierarchical-label-taxonomies-using-amazon-sagemaker-ground-truth/)
+   - ジョブチェーン＝あるラベリングジョブの出力が、出力拡張マニフェストを介して次のジョブにフィードされるワークフローをジョブチェーンと言います。各ステップで、前のジョブのラベルに基づいてフィルターを適用することもできます。
+   -  ワーカータイプを混在させる機会を提供することもできます。公務員を使用して簡単なラベル付けとフィルタリングのタスクを実行し、民間の厳選された労働力を使用して、より正確なまたはドメインの専門知識を必要とするタスクを実行します。
+   -  例：ストリートシーンの例＝画像を含むマニフェストから始めて、ラベルの各レベルを段階的に追加します。このプロセスでは、データセットをフィルターでセグメント化します。ワークフローは次のようになります。
+        - ラベルのない最初のデータを収集します。
+        - Job1：道路オブジェクトにラベルを付けます（画像分類ジョブ）。出力は、車両、信号機、または歩行者のラベルが付いた拡張マニフェストになります。
+        - Job2：車両のあるすべての画像を選択し、これらの画像の各車の周りにバウンディングボックスを描画します。
+        - ![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2019/02/15/ground-truth-label-taxonomies-2.gif)
+    - 拡張マニフェストの特徴＝通常、Amazon SageMakerトレーニングジョブには、実際の画像をトレーニングするための1つのチャネルと、ラベル用の追加のチャネルがあります。拡張マニフェストを使用すると、1つのチャネルで画像とラベルの両方をストリーミングできます。これにより、チャネル数が半分になり、ラベルファイルを対応する画像ファイルに関連付ける複雑さが軽減されます。拡張マニフェストは、UTF-8でエンコードされたJSON Linesファイルであり、各行は完全で有効なJSONオブジェクトです。拡張マニフェストには、データセットオブジェクトを定義するソースフィールドが含まれている必要があり、オプションで属性フィールドも含まれている必要があります。各ラベリングジョブは、2つの追加の属性フィールドを出力します。1つはラベルを含み、もう1つはラベルに関連付けられたメタデータを含みます。拡張という用語は、データセットオブジェクトのグラウンドトゥルースラベルがインラインで拡張されているという事実に由来しています。
+           
+- [Amazon SageMaker Ground Truth ジョブをチェーン化して、ラベルを段階的に作成する](https://aws.amazon.com/jp/blogs/news/chaining-amazon-sagemaker-ground-truth-jobs-to-label-progressively/)
+   - ラベリングジョブのチェーン
+ 
+---
 SageMakerGT後のYOLO物体検出モデル学習
 
 - [Streamlining data labeling for YOLO object detection in Amazon SageMaker Ground Truth](https://awsfeed.com/whats-new/machine-learning/streamlining-data-labeling-for-yolo-object-detection-in-amazon-sagemaker-ground-truth)
