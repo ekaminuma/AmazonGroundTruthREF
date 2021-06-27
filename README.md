@@ -79,3 +79,7 @@ SageMakerGT後のYOLO物体検出モデル学習
   - Amazon SageMaker, Amazon SageMaker Managed Spot Training
   - SRGAN（Super Resolution Generative Adversarial Network）を用いて高精細化,ローカルPCへのSageMaker環境構築方法、Spot Trainingの注意点.
 
+---
+- AWS CLI(Command Line Interface)
+ - [Accessing S3 Bucket From Google Colab](https://medium.com/@lily_su/accessing-s3-bucket-from-google-colab-16f7ee6c5b51)  
+ - [How to load data from AWS S3 into Google Colab](https://python.plainenglish.io/how-to-load-data-from-aws-s3-into-google-colab-7e76fbf534d2)
