@@ -3,8 +3,9 @@
 ---
 - [Amazon SageMaker Ground Truth でラベル付けしたデータセットを使用して、モデルを簡単にトレーニングする](https://aws.amazon.com/jp/blogs/news/easily-train-models-using-datasets-labeled-by-amazon-sagemaker-ground-truth/) 
     - ラベル付きデータセット=入力データセットオブジェクトを、メタデータを使用してインライン展開する拡張マニフェストファイル形式で作成される。
-    - 以前は、拡張されたデータセットでModelをTrainingするために、低レベルの AWS SDK API しか使用できませんでした。
-    - Amazon SageMakerコンソールで数回クリックするか、Amazon SageMaker Python SDK を使用して1行の API CallでTrainingをすばやく簡単に実行できるようになりました(2018年12月)。
+    - [1] 以前は、拡張されたデータセットでModelをTrainingするために、低レベルの AWS SDK API しか使用できませんでした。
+    - [2] Amazon SageMakerコンソールで数回クリック[2-1]するか、Amazon SageMaker Python SDK を使用して1行の API Call[2-2]でTrainingをすばやく簡単に実行できるようになりました(2018年12月)。
+    - [3] Amazon SageMakerのPipe modeを使用してTrainingすることができます。このモードは、Amazon Simple Storage Service (S3) から Amazon SageMaker にデータがストリーミングされる速度を大幅に高速化するので、トレーニングジョブが早く始まり、素早く完了し、 Amazon SageMaker での機械学習モデルのトレーニングにかかる全体的なコストを削減できます。
 - [Augmented Manifest(拡張マニフェスト)ファイルの説明](https://docs.aws.amazon.com/sagemaker/latest/dg/augmented-manifest.html)
    - ラベル付きデータセットは、拡張マニフェストファイル形式で作成される。 
    - 拡張マニフェストファイルはJSON形式。
