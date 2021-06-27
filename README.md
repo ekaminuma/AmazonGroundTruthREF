@@ -6,7 +6,7 @@
 - [SageMaker Object Detection training](https://www.easymlpocs.com/training/sageobjdetection/)
 - [AmazonSagemakerを使用してAWSクラウドにデプロイするエンドツーエンドのディープラーニングモデルを構築する](https://ichi.pro/amazonsagemaker-o-shiyoshite-aws-kura-udo-ni-depuroi-suru-endotsu-endo-no-dhi-pura-ningumoderu-o-kochikusuru-118221202638567)
     - トレーニングジョブ作成には2つのオプション有。
-       - 1. APIとコード(notebook)の使用
+       - 1. APIとPythonコード(Notebook)の使用
        - 2. sagemakerコンソールの使用＝File/Pipeの違い
              - ファイルモード：トレーニング用データは、ジョブが開始されるEC2インスタンスにコピーされます。
              - パイプモード：トレーニングデータはリアルタイムでEC2インスタンスにストリーミングされます。 
