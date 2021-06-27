@@ -55,6 +55,8 @@ Amazon SageMaker Ground Truth (SageMakerGT), [FAQ](https://aws.amazon.com/jp/sag
 ---
 GTジョブのチェーン機能で段階的学習
 
+- [Chaining Labeling Jobs](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-reusing-data.html)
+   -  Clones and Chains = Amazon SageMaker Ground Truth can reuse datasets from prior jobs in two ways: cloning and chaining.
 - [Amazon SageMaker GroundTruthを使用した階層ラベル分類の作成](https://aws.amazon.com/jp/blogs/machine-learning/creating-hierarchical-label-taxonomies-using-amazon-sagemaker-ground-truth/)
    - ジョブチェーン＝あるラベリングジョブの出力が、出力拡張マニフェストを介して次のジョブにフィードされるワークフローをジョブチェーンと言います。各ステップで、前のジョブのラベルに基づいてフィルターを適用することもできます。
    -  ワーカータイプを混在させる機会を提供することもできます。公務員を使用して簡単なラベル付けとフィルタリングのタスクを実行し、民間の厳選された労働力を使用して、より正確なまたはドメインの専門知識を必要とするタスクを実行します。
